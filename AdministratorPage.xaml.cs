@@ -35,11 +35,7 @@ namespace MIAPO_UP
             newposition.User_id = 1;
             db.Users.Add(newposition);
             db.SaveChanges();
-            List<Users> users = db.Users.ToList();
-            string str = "";
-            foreach (Users use in users)
-                str += "Должность: " + use.User_login + " | ";
-            MessageBox.Show(str);
+
         }
     }
 }

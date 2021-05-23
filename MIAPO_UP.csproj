@@ -76,8 +76,11 @@
     </ApplicationDefinition>
     <Compile Include="ApplicationContext.cs" />
     <Compile Include="Car.cs" />
+    <Compile Include="Car_Status.cs" />
     <Compile Include="Employer.cs" />
     <Compile Include="Position.cs" />
+    <Compile Include="Service_car.cs" />
+    <Compile Include="Shift.cs" />
     <Compile Include="Users.cs" />
     <Compile Include="AdministratorPage.xaml.cs">
       <DependentUpon>AdministratorPage.xaml</DependentUpon>

@@ -14,7 +14,7 @@
         <TextBox x:Name="login" HorizontalAlignment="Left" Height="24" Margin="64.387,137,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="154" Grid.Column="1"/>
         <TextBox x:Name="password" HorizontalAlignment="Left" Height="27" Margin="64.387,166,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="154" Grid.Column="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="64.387,102,0,0" TextWrapping="Wrap" Text="Авторизация" VerticalAlignment="Top" Height="30" Width="154" Grid.Column="1"/>
-        <Button x:Name="Authbotton" Content="Вход" HorizontalAlignment="Left" Margin="64.387,212,0,0" VerticalAlignment="Top" Width="154" Height="22" Grid.Column="1"/>
+        <Button x:Name="Authbotton" Content="Вход" HorizontalAlignment="Left" Margin="64.387,212,0,0" VerticalAlignment="Top" Width="154" Height="22" Grid.Column="1" Click="Authbotton_Click"/>
 
     </Grid>
 </Window>

@@ -7,22 +7,13 @@ using System.Threading.Tasks;
 
 namespace MIAPO_UP
 {
-    class Car
+    class Service_car
     {
         [Key]
+        public int Service_car_id { get; set; }
         public int Car_id { get; set; }
-        string FK_Car_status { get; set;}
-        string Car_name { get; set; }
-
-        public void EditCar( string CS, string CN)
-        {
-
-        }
-
-        public void CreateCar( string Cs, string Cn)
-        {
-
-        }
+        public string Date_begin {get; set;}
+        public string Date_end { get; set; }
 
     }
 }

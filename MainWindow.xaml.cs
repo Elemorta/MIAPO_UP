@@ -25,14 +25,20 @@ namespace MIAPO_UP
         {
             InitializeComponent();
             db = new ApplicationContext();
-            this.Hide();
-            AdministratorPage Ad = new AdministratorPage();
-            Ad.Show();
             
         }
 
-        private void Firts()
+        private void Authbotton_Click(object sender, RoutedEventArgs e)
         {
+            List<Employer> employers = db.Employer.ToList();
+            string str = "";
+            string loginuser = login.Text;
+            string passworduser = password.Text;
+
+            int FK_user_id = db.Users.Where(b => b.User_login = (loginuser || !b.User_password) = passworduser);
+            foreach (Employer emp in employers)
+
+            MessageBox.Show(str);
         }
     }
 }

@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
 
 namespace MIAPO_UP
 {
-    class Position
+    class Car_Status
     {
         [Key]
-        public int Position_id { get; set; }
-        public string Position_name { get; set; }
+        public int Status_id { get; set; }
+        public string Status_name { get; set; }
     }
 }

@@ -14,12 +14,12 @@ namespace MIAPO_UP
 
         [Key]
         public int Employer_id { get; set; }
-        public string FirstName { get; set; }
-        public string SecondName { get; set; }
-        public int Postition { get; set; }
+        public string First_Name { get; set; }
+        public string Second_Name { get; set; }
+        public int FK_Position_id { get; set; }
         public int Salary { get; set; }
         public int Expirience { get; set; }
-        public int Userid { get; set; }
+        public int FK_User_id { get; set; }
 
 
         //public Employer GetDataUser(string login, string password) { }
