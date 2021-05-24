@@ -15,26 +15,23 @@ using System.Windows.Shapes;
 namespace MIAPO_UP
 {
     /// <summary>
-    /// Логика взаимодействия для Window1.xaml
+    /// Логика взаимодействия для Employer_Shifts.xaml
     /// </summary>
-    public partial class AdministratorPage : Window
+    public partial class Employer_Shifts : Window
     {
         ApplicationContext db;
-        public AdministratorPage()
+        public Employer_Shifts()
         {
             InitializeComponent();
             db = new ApplicationContext();
+            
         }
 
-        private void CreateEmployer_Click(object sender, RoutedEventArgs e)
+        private void Update(object sender, RoutedEventArgs e)
         {
-            
-            Users newposition = new Users();
-            newposition.User_login = Position.Text;
-            newposition.User_password = Salary.Text;
-            newposition.User_id = 1;
-            db.Users.Add(newposition);
-            db.SaveChanges();
+            int id_Employer = Convert.ToInt32(Employer_id.Text);
+            List<Shift> Date = db.Shift.ToList();
+            MessageBox.Show(Convert.ToString(Date.ToList()));
 
         }
     }

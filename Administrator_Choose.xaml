@@ -1,0 +1,15 @@
+﻿<Window x:Class="MIAPO_UP.Administrator_Choose"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MIAPO_UP"
+        mc:Ignorable="d"
+        Title="Administrator_Choose" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="CreateEmployer" Content="Создать работника" HorizontalAlignment="Left" Margin="52,61,0,0" VerticalAlignment="Top" Width="204" Height="91" Click="Open_Window_Create_Employer"/>
+        <Button x:Name="Service_Car" Content="ТО машины" HorizontalAlignment="Left" Margin="52,203,0,0" VerticalAlignment="Top" Width="204" Height="91" Click="Open_Window_Service_Car"/>
+        <Button x:Name="Edit_Car_Employer" Content="Редактировать работника/машину" HorizontalAlignment="Left" Margin="491,61,0,0" VerticalAlignment="Top" Width="204" Height="91" Click="Open_Window_Edit_DataBase"/>
+        <Button x:Name="Employer_shift" Content="Смены работника" HorizontalAlignment="Left" Margin="491,203,0,0" VerticalAlignment="Top" Width="204" Height="91" Click="Open_Window_Shift_Employer"/>
+    </Grid>
+</Window>

@@ -14,6 +14,7 @@ namespace MIAPO_UP
         public DbSet<Users> Users { get; set; }
 
         public DbSet<Position> Position { get; set; }
+        public DbSet<Shift> Shift { get; set; }
 
         public ApplicationContext() : base("DefaultConnection") { }
     }

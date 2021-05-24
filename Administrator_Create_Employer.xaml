@@ -1,0 +1,24 @@
+﻿<Window x:Class="MIAPO_UP.Administrator_Create_Employer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MIAPO_UP"
+        mc:Ignorable="d"
+        Title="Administrator_Create_Employer" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="First_Name" HorizontalAlignment="Left" Height="37" Margin="101,58,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" Width="519"/>
+        <TextBox x:Name="Second_Name" HorizontalAlignment="Left" Height="36" Margin="101,103,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" Width="519"/>
+        <ComboBox  x:Name ="Position" SelectedIndex="0"  Canvas.Left="198" Canvas.Top="32" Margin="101,146,172,232">
+            <TextBlock>Бухгалтер</TextBlock>
+            <TextBlock>Механик</TextBlock>
+            <TextBlock>Водитель</TextBlock>
+        </ComboBox>
+        <TextBox x:Name="Salary" HorizontalAlignment="Left" Height="36" Margin="101,192,0,0" TextWrapping="Wrap" Text="Зарплата" VerticalAlignment="Top" Width="519"/>
+        <TextBox x:Name="Expirience" HorizontalAlignment="Left" Height="37" Margin="101,236,0,0" TextWrapping="Wrap" Text="Опыт" VerticalAlignment="Top" Width="519"/>
+        <TextBox x:Name="Login" HorizontalAlignment="Left" Height="36" Margin="101,281,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Width="519"/>
+        <TextBox x:Name="Password" HorizontalAlignment="Left" Height="36" Margin="101,325,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Width="519"/>
+        <Button  Content="Создать" HorizontalAlignment="Left" Margin="196,366,0,0" VerticalAlignment="Top" Width="316" Height="43" Click="Create_Employer"/>
+
+    </Grid>
+</Window>

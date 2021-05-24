@@ -74,17 +74,52 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Administrator_Choose.xaml.cs">
+      <DependentUpon>Administrator_Choose.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator_Create_Employer.xaml.cs">
+      <DependentUpon>Administrator_Create_Employer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator_Edit.xaml.cs">
+      <DependentUpon>Administrator_Edit.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ApplicationContext.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="Car_Status.cs" />
     <Compile Include="Employer.cs" />
+    <Compile Include="Employer_Choose.xaml.cs">
+      <DependentUpon>Employer_Choose.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Employer_Shifts.xaml.cs">
+      <DependentUpon>Employer_Shifts.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Position.cs" />
     <Compile Include="Service_car.cs" />
+    <Compile Include="Service_Car_Window.xaml.cs">
+      <DependentUpon>Service_Car_Window.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Shift.cs" />
     <Compile Include="Users.cs" />
-    <Compile Include="AdministratorPage.xaml.cs">
-      <DependentUpon>AdministratorPage.xaml</DependentUpon>
-    </Compile>
+    <Page Include="Administrator_Choose.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Administrator_Create_Employer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Administrator_Edit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Employer_Choose.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Employer_Shifts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -97,7 +132,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="AdministratorPage.xaml">
+    <Page Include="Service_Car_Window.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -126,7 +161,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <None Include="UP_MIAPO_DB.db">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
