@@ -24,6 +24,7 @@ namespace MIAPO_UP
         {
             InitializeComponent();
             db = new ApplicationContext();
+            DataGridfs.ItemsSource = db.Shift.ToList();
             
         }
 
@@ -31,7 +32,7 @@ namespace MIAPO_UP
         {
             int id_Employer = Convert.ToInt32(Employer_id.Text);
             List<Shift> Date = db.Shift.ToList();
-            MessageBox.Show(Convert.ToString(Date.ToList()));
+            DataGridfs.ItemsSource = db.Shift.Where(DX => DX.Employer_id == id_Employer).ToList();
 
         }
     }

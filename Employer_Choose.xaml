@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MIAPO_UP"
         mc:Ignorable="d"
-        Title="Employer_Choose" Height="450" Width="800">
+        Title="Employer_Choose" Height="318.083" Width="166.302">
     <Grid>
-        
+        <Button Content="Начать смену" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Width="135" Height="77" Click="Button_Click"/>
+        <Button Content="Продолжить смену" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="135" Height="71" Click="Button_Click_2"/>
+        <Button Content="Закрыть смену" HorizontalAlignment="Left" Margin="10,186,0,0" VerticalAlignment="Top" Width="135" Height="71" Click="Button_Click_1"/>
+
     </Grid>
 </Window>

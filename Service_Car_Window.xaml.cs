@@ -19,9 +19,18 @@ namespace MIAPO_UP
     /// </summary>
     public partial class Service_Car_Window : Window
     {
+        ApplicationContext db;
         public Service_Car_Window()
         {
             InitializeComponent();
+            db = new ApplicationContext();
+            DataGridfs.ItemsSource = db.Service_car.ToList();
+        }
+
+        private void Update(object sender, RoutedEventArgs e)
+        {
+            int Carid = Convert.ToInt32(Car_id.Text);
+            DataGridfs.ItemsSource = db.Service_car.Where(ds => ds.Car_id == Carid).ToList();
         }
     }
 }

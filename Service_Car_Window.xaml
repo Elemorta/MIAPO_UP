@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MIAPO_UP"
         mc:Ignorable="d"
-        Title="Service_Car_Window" Height="450" Width="800">
+        Title="Employer_Shifts" Height="450" Width="800">
     <Grid>
-        
+
+        <TextBox Name="Car_id" HorizontalAlignment="Left" Height="35" Margin="36,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="36,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="261"><Run Text="id "/><Run Text="машины"/></TextBlock>
+        <DataGrid x:Name="DataGridfs" HorizontalAlignment="Left" Height="345" Margin="427,37,0,0" VerticalAlignment="Top" Width="344" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Car_id}" Header="id Машины"/>
+                <DataGridTextColumn Binding="{Binding Date_begin}" Header="Дата начала ТО"/>
+                <DataGridTextColumn Binding="{Binding Date_end}"  Header="Дата конца ТО"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Вывести" HorizontalAlignment="Left" Margin="205,70,0,0" VerticalAlignment="Top" Width="92" Height="30" Click="Update"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="36,157,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="36,215,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="36,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="92" Text="Дата начала ТО"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="36,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="92" RenderTransformOrigin="0.443,0.836" Text="Дата конца ТО"/>
+        <Button Content="Добавить ТО машины" HorizontalAlignment="Left" Margin="36,255,0,0" VerticalAlignment="Top" Width="143" Height="35" Click="Create_Service"/>
+
     </Grid>
 </Window>

@@ -16,6 +16,8 @@ namespace MIAPO_UP
         public DbSet<Position> Position { get; set; }
         public DbSet<Shift> Shift { get; set; }
 
+        public DbSet<Service_car> Service_car { get; set; }
+
         public ApplicationContext() : base("DefaultConnection") { }
     }
 }

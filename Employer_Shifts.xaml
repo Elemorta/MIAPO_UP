@@ -10,10 +10,10 @@
 
         <TextBox Name="Employer_id" HorizontalAlignment="Left" Height="29" Margin="350,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="52"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="310,37,0,0" TextWrapping="Wrap" Text="id работника" VerticalAlignment="Top" Height="29" Width="92"/>
-        <DataGrid x:Name="DataGridfs" HorizontalAlignment="Left" Height="345" Margin="427,37,0,0" VerticalAlignment="Top" Width="326" ItemsSource="{Binding ElementName=textBlock, Mode=OneWay}">
+        <DataGrid x:Name="DataGridfs" HorizontalAlignment="Left" Height="345" Margin="427,37,0,0" VerticalAlignment="Top" Width="326" AutoGenerateColumns="False" >
             <DataGrid.Columns>
-                <DataGridTextColumn x:Name="Date_begin" Header="Дата начала смены"/>
-                <DataGridTextColumn x:Name="Date_end" Header="Дата конца смены"/>
+                <DataGridTextColumn Binding="{Binding Date_begin}" Header="Дата начала смены"/>
+                <DataGridTextColumn Binding="{Binding Date_end}"  Header="Дата конца смены"/>
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Вывести" HorizontalAlignment="Left" Margin="310,118,0,0" VerticalAlignment="Top" Width="92" Height="30" Click="Update"/>
